@@ -1,4 +1,4 @@
-import Switch from "@/components/switch";
+import Switch from "@/components/atoms/switch";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import Image from "next/image";
 
@@ -14,13 +14,8 @@ export default async function Home({ params: { lang } }: Props) {
   return (
     <main className="p-8">
       <div className="mb-6">
-        <p className="text-lg">
-          {intl.get_started}&nbsp;
-          <code className="bg-gray-100 px-2 py-1 rounded">
-            src/app/page.tsx
-          </code>
-        </p>
-        <Switch />
+        <p className="text-lg">{intl.get_started}&nbsp;</p>
+
         <div className="mt-6">
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

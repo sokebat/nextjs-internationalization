@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import Switch from "../switch";
-import { Button } from "../atoms/Button";
+import Switch from "../atoms/switch";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4">
+    <nav className="flex justify-between items-center p-3 bg-white  ">
       <section>
         <Image
           src="/images/logo.png"
@@ -24,9 +22,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Switch />
-
-        <Button>Book an Appointment</Button>
+        <div>
+          <Switch />
+        </div>
       </section>
     </nav>
   );
@@ -37,15 +35,15 @@ export default Navbar;
 const navLinks = [
   {
     name: "Home",
-    href: "/",
+    href: "#",
   },
 
   {
     name: "About Us",
-    href: "/about",
+    href: "#",
   },
   {
     name: "Contact Us",
-    href: "/contact",
+    href: "#",
   },
 ];

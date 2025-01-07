@@ -1,4 +1,4 @@
-import Switch from "@/components/switch";
+import Switch from "@/components/atoms/switch";
 import { getDictionary, Locale } from "@/dictionaries/dictionaries";
 import React from "react";
 
